@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/gradient_background_get_started"
     android:padding="30dp"
     tools:context=".MainActivity">
 
@@ -16,7 +16,7 @@
         android:fontFamily="@font/poppinsmedium"
         android:textSize="35sp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="60dp" />
     
     <View
         android:layout_height="0dp"
@@ -52,7 +52,8 @@
         android:backgroundTint="@color/white"
         android:paddingVertical="8dp"
         android:src="@drawable/ic_baseline_arrow_forward_24"
-        android:background="@drawable/button_shape" android:layout_marginBottom="40dp"
+        android:background="@drawable/button_shape"
+        android:layout_marginBottom="40dp"
         android:contentDescription="@string/welcome_to_zakora_food" />
 
 </LinearLayout>
