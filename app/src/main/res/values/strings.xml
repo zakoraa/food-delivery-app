@@ -9,4 +9,10 @@
     <string name="login">Login</string>
     <string name="zakora">Zakora</string>
     <string name="food">Food</string>
+    <string name="sign_up_with_space">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="or_sign_up_with">or Sign Up with</string>
+    <string name="google">google</string>
+    <string name="facebook">facebook</string>
 </resources>
