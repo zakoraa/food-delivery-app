@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        tools:context=".HomeActivity">
+
+        <LinearLayout
+            android:id="@+id/ly_header_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/ib_menu_icon"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_menu_24"
+                    android:backgroundTint="@color/primaryColor"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:id="@+id/ib_shop_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_shopping_cart_24"
+                    android:background="@color/primaryColor"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppinsmedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_home"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="50dp"
+                android:fontFamily="@font/poppinsregular"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/white"
+                android:layout_marginHorizontal="50dp"
+                android:textColor="@color/grey"
+                android:text="@string/search_menu"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/ly_header_home"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_up_button_shape"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="30dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/homefragment" />
+            <include layout="@layout/homefragment"/>
+            <include layout="@layout/homefragment"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
