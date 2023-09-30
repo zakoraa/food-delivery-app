@@ -88,6 +88,7 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_btn_to_show_sign_up"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
@@ -96,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/sign_up_button_shape"
         android:clickable="true"
-        android:onClick="onShowSignUpClick">
+        >
 
         <ImageView
             android:id="@+id/iv_icon_arrow_up_login"
