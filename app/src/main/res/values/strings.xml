@@ -23,4 +23,6 @@
     <string name="_50_000_idr">50.000 IDR</string>
     <string name="paket_kfc_ayam_bucket">Paket KFC Ayam Bucket</string>
     <string name="title_kfc_product">title_kfc_product</string>
+    <string name="icon_menu">icon_menu</string>
+    <string name="icon_shop">icon_shop</string>
 </resources>

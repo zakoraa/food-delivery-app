@@ -15,7 +15,9 @@
             android:id="@+id/ly_header_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
             android:orientation="vertical"
             >
             <LinearLayout
@@ -28,9 +30,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_menu_24"
-                    android:backgroundTint="@color/primaryColor"/>
+                    android:backgroundTint="@color/primaryColor"
+                    android:contentDescription="@string/icon_menu" />
                 <View
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_weight="1"/>
                 <ImageButton
@@ -39,7 +42,8 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_shopping_cart_24"
                     android:background="@color/primaryColor"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/icon_shop" />
 
             </LinearLayout>
 
