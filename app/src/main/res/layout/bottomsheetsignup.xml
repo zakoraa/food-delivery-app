@@ -96,26 +96,13 @@
         android:layout_gravity="center_horizontal"
         />
 
-    <LinearLayout
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTintMode="screen"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/facebook"
-            android:contentDescription="@string/google" />
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTintMode="screen"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/google"
-            android:contentDescription="@string/facebook"/>
-    </LinearLayout>
+        android:src="@drawable/social_media"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/social_media"
+        android:layout_marginBottom="20dp"/>
 
 
 </LinearLayout>

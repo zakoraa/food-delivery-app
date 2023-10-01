@@ -25,4 +25,7 @@
     <string name="title_kfc_product">title_kfc_product</string>
     <string name="icon_menu">icon_menu</string>
     <string name="icon_shop">icon_shop</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_sign_in_with">Or Sign in With</string>
+    <string name="social_media">social_media</string>
 </resources>
