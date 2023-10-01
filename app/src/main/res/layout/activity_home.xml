@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/primaryColor"
         tools:context=".HomeActivity">
 
@@ -79,13 +79,14 @@
             android:layout_height="wrap_content"
             android:background="@drawable/sign_up_button_shape"
             android:backgroundTint="@color/white"
-            android:paddingHorizontal="20dp"
+            android:paddingHorizontal="25dp"
             android:paddingVertical="30dp"
             android:orientation="vertical">
 
-            <include layout="@layout/homefragment" />
-            <include layout="@layout/homefragment"/>
-            <include layout="@layout/homefragment"/>
+            <include layout="@layout/home_fragment" />
+            <include layout="@layout/home_fragment"/>
+            <include layout="@layout/home_fragment"/>
+            <include layout="@layout/home_fragment"/>
 
         </LinearLayout>
     </RelativeLayout>

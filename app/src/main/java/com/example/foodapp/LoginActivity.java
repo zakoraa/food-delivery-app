@@ -18,9 +18,11 @@ import android.widget.RelativeLayout;
 public class LoginActivity extends AppCompatActivity {
 
     private RelativeLayout bottomSheet;
+    private Button loginButton;
 
     private void initView(){
         bottomSheet = findViewById(R.id.rl_btn_to_show_sign_up);
+        loginButton = findViewById(R.id.btn_login);
     }
 
     @Override
@@ -33,6 +35,11 @@ public class LoginActivity extends AppCompatActivity {
         bottomSheet.setOnClickListener(v->{
             showBottomSheet();
         });
+
+        loginButton.setOnClickListener(v->{
+            startActivity(new Intent(this, HomeActivity.class));
+        });
+
     }
 
     private void showBottomSheet(){
@@ -46,4 +53,6 @@ public class LoginActivity extends AppCompatActivity {
         dialog.getWindow().getAttributes().windowAnimations = R.style.BottomSheetAnimation;
         dialog.getWindow().setGravity(Gravity.BOTTOM);
     }
+
+
 }
