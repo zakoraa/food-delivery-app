@@ -43,6 +43,22 @@
                     android:text="Our fried rice is made from the finest ingredients and veggies. Every single dish is made with fresh vegetables. Each plate is served with our signature chicken and a free"
 
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Ingredients"
+                    android:textSize="20sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppinsmedium"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Additions"
+                    android:textSize="20sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppinsmedium"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -84,5 +100,6 @@
 
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
