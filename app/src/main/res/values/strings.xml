@@ -28,4 +28,6 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="or_sign_in_with">Or Sign in With</string>
     <string name="social_media">social_media</string>
+    <string name="_4_5">4.5</string>
+    <string name="description">Description</string>
 </resources>
