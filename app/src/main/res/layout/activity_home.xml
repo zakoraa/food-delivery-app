@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,95 +18,103 @@
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
                 <ImageButton
                     android:id="@+id/ib_menu_icon"
-                    android:clickable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_menu_24"
                     android:backgroundTint="@color/primaryColor"
-                    android:contentDescription="@string/icon_menu" />
+                    android:clickable="true"
+                    android:contentDescription="@string/icon_menu"
+                    android:src="@drawable/ic_baseline_menu_24" />
+
                 <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
+
                 <ImageButton
                     android:id="@+id/ib_shop_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_shopping_cart_24"
-                    android:background="@color/primaryColor"
                     android:layout_gravity="center_vertical"
-                    android:contentDescription="@string/icon_shop" />
+                    android:background="@color/primaryColor"
+                    android:contentDescription="@string/icon_shop"
+                    android:src="@drawable/ic_baseline_shopping_cart_24" />
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome"
-                android:textSize="30sp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/poppinsmedium"/>
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:fontFamily="@font/poppinsregular"
                 android:text="@string/desc_home"
                 android:textAlignment="center"
-                android:textColor="@color/white"
-                android:layout_marginHorizontal="50dp"
-                android:fontFamily="@font/poppinsregular"/>
+                android:textColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
-                android:paddingVertical="5dp"
-                android:paddingHorizontal="50dp"
-                android:background="@drawable/button_shape"
                 android:layout_marginVertical="10dp"
-                android:backgroundTint="@color/white">
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/white"
+                android:orientation="horizontal"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="5dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_search_24"
-                    android:layout_marginEnd="5dp"/>
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/search_menu"
+                    android:src="@drawable/ic_baseline_search_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/search_menu"
-                    android:textSize="16sp"
-                    android:textColor="@color/grey"/>
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_below="@id/ly_header_home"
             android:layout_height="wrap_content"
+            android:layout_below="@id/ly_header_home"
             android:background="@drawable/sign_up_button_shape"
             android:backgroundTint="@color/white"
+            android:orientation="vertical"
             android:paddingHorizontal="25dp"
-            android:paddingVertical="30dp"
-            android:orientation="vertical">
+            android:paddingVertical="30dp">
 
             <include layout="@layout/home_fragment" />
-            <include layout="@layout/home_fragment"/>
-            <include layout="@layout/home_fragment"/>
-            <include layout="@layout/home_fragment"/>
+
+            <include layout="@layout/home_fragment" />
+
+            <include layout="@layout/home_fragment" />
+
+            <include layout="@layout/home_fragment" />
 
         </LinearLayout>
     </RelativeLayout>

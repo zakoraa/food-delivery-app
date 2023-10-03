@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:id="@+id/ly_detail_product"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp">
+    android:layout_marginTop="20dp"
+    android:clickable="true"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         app:cardCornerRadius="20dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="230dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
+            android:contentDescription="@string/title_kfc_product"
             android:scaleType="fitXY"
-            android:src="@drawable/kfc"
-            android:contentDescription="@string/title_kfc_product" />
+            android:src="@drawable/kfc" />
     </androidx.cardview.widget.CardView>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/paket_kfc_ayam_bucket"
-        android:textStyle="bold"
-        android:textSize="18sp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/poppinsmedium"
-        android:layout_marginTop="5dp"/>
+        android:text="@string/paket_kfc_ayam_bucket"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,31 +39,31 @@
         android:layout_gravity="start"
 
         >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:text="@string/_4_9"
-            android:textSize="14sp"
-            android:textColor="@color/primaryColor"/>
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_355_ratings_starts_at"
-            android:textSize="14sp"
-            android:textColor="@color/grey"
             android:layout_marginEnd="5dp"
-            />
+            android:text="@string/_355_ratings_starts_at"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_50_000_idr"
-            android:textSize="14sp"
-            android:textColor="@color/primaryColor"/>
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>
