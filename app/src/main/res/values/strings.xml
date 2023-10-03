@@ -30,4 +30,9 @@
     <string name="social_media">social_media</string>
     <string name="_4_5">4.5</string>
     <string name="description">Description</string>
+    <string name="our_fried_rice_is_made_from_the_finest_ingredients_and_veggies_every_single_dish_is_made_with_fresh_vegetables_each_plate_is_served_with_our_signature_chicken_and_a_free">Our fried rice is made from the finest ingredients and veggies. Every single dish is made with fresh vegetables. Each plate is served with our signature chicken and a free</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="additions">Additions</string>
+    <string name="ayam_bucket">Ayam Bucket</string>
+    <string name="back_from_detail_product_page">back from detail product page</string>
 </resources>
