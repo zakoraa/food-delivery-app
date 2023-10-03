@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="30dp"
+        android:layout_marginVertical="50dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -74,13 +74,13 @@
                 android:fontFamily="@font/poppinsmedium"
                 android:text="@string/description"
                 android:textColor="@color/grey"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/our_fried_rice_is_made_from_the_finest_ingredients_and_veggies_every_single_dish_is_made_with_fresh_vegetables_each_plate_is_served_with_our_signature_chicken_and_a_free"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
 
             <TextView
@@ -90,7 +90,7 @@
                 android:fontFamily="@font/poppinsmedium"
                 android:text="@string/ingredients"
                 android:textColor="@color/grey"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
             <ImageView
                 android:layout_width="match_parent"
