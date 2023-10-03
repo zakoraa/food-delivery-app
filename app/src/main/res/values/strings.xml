@@ -36,4 +36,5 @@
     <string name="ayam_bucket">Ayam Bucket</string>
     <string name="back_from_detail_product_page">back from detail product page</string>
     <string name="buy">Buy</string>
+    <string name="your_email_or_password_is_wrong">Your email or password is wrong</string>
 </resources>

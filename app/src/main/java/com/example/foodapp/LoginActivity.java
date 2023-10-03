@@ -8,6 +8,7 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -60,6 +62,8 @@ public class LoginActivity extends AppCompatActivity {
             }
             if (isValidEmail && isValidPass) {
                 startActivity(new Intent(this, HomeActivity.class));
+            }else{
+                showLoginFailedDialog();
             }
         });
 
@@ -75,6 +79,26 @@ public class LoginActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.getWindow().getAttributes().windowAnimations = R.style.BottomSheetAnimation;
         dialog.getWindow().setGravity(Gravity.BOTTOM);
+    }
+
+    private void showLoginFailedDialog(){
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.login_failed_dialog);
+
+        dialog.show();
+        dialog.getWindow().getAttributes().windowAnimations = R.style.BottomSheetAnimation;
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().setGravity(Gravity.BOTTOM);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                dialog.dismiss();
+            }
+        }, 2000);
+
     }
 
 
